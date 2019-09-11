@@ -1,0 +1,44 @@
+plugins {
+    id 'java'
+}
+
+sourceCompatibility = '1.8'
+ext.spigotVersion = '1.9-R0.1-SNAPSHOT'
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+    maven {
+        name 'Sonatype'
+        url 'https://oss.sonatype.org/content/repositories/snapshots/'
+    }
+    maven {
+        name 'Spigot'
+        url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+    }
+    maven {
+        name 'Vault-Repo'
+        url 'http://nexus.theyeticave.net/content/repositories/pub_releases'
+    }
+    maven {
+        name 'sk89q Snapshots'
+        url 'http://maven.sk89q.com/repo/'
+    }
+}
+
+file('libs').mkdirs()
+
+ant.get src: 'http://server.o2gaming.com/downloads/spigot-1.9.jar', dest: file('libs'), verbose: false, skipexisting: true
+
+jar {
+    baseName "VectorForce"
+}
+
+dependencies {
+    compile 'com.sk89q.worldedit:worldedit-bukkit:6.1.1-SNAPSHOT'
+    compile 'org.projectlombok:lombok:1.14.8'
+    compile files(
+        'libs/spigot-1.9.jar'
+    )
+}

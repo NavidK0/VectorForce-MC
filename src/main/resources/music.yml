@@ -1,0 +1,62 @@
+#Music that can be loaded, with length in seconds
+#For example:
+# example;120 is the name of the music event with a seperating semicolon followed by
+# the length in minutes;seconds
+music:
+  - battlescene;3;43
+  - bonedrydunes;2;09
+  - bowserscastle;2;09
+  - dragondriftway;2;17
+  - fightsong;3;24
+  - first;0;08
+  - grumblevolcano;2;34
+  - iceiceoutpost;1;48
+  - infiniteblue;3;22
+  - intro;1;08
+  - mariocircuit;2;20
+  - moomoomeadows;2;14
+  - mountwario;2;45
+  - mutecityremix;1;51
+  - paperengine;3;23
+  - piranhaplantside;2;19
+  - rainbowroad;2;31
+  - rainbowroadremix;3;02
+  - royalraceway;2;37
+  - second;0;07
+  - slider;2;54
+  - specialround;0;14
+  - startrace;0;03
+  - third;0;07
+  - thwompruins;2;12
+  - toadsturnpike;2;33
+  - wariosgoldmine;2;22
+  - wariostadium;2;16
+  - wildwoods;2;09
+  - barbra;5
+  - neocortex;2;22
+  - minigame6;0;53
+  - minigame22;1;40
+  - cancan;2;20
+  - howstrange;1;09
+  - fail;0;02
+  - tempest;5;53
+  - fastjazz;1;25
+  - losingresults;1;50
+  - mushroombridge;2;13
+  - rainbowroad64;4;48
+  - hbfs;4;26
+  - dddocks;6;32
+  - finale;3;23
+  - imperium;3;21
+  - uptownfunk;4;31
+  - buoybasegalaxy;2;21
+  - aquaharp;3;49
+  - littlesister;4;44
+  - pipedream2;3;53
+  - weedengine;0;33
+  - wheatleyssong;3;28
+  - beepblockskyway;2;46
+  - bigarm;3;34
+  - eightmelodies;4;16
+  - rainbowroad4;1;35
+  - smilesandtears;4;14

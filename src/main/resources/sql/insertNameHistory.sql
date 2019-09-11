@@ -1,0 +1,1 @@
+INSERT INTO namehistory (uuid, username) VALUES (?, ?) ON DUPLICATE KEY UPDATE username=?

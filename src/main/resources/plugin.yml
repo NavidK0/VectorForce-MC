@@ -1,0 +1,25 @@
+author: Navid K.
+description: "VectorForce, a shiny new gamemode"
+main: com.lastabyss.vectorforce.VectorForce
+name: VectorForce
+url: http://www.lastabyss.com/
+version: '1.2'
+softdepend: [WorldEdit]
+
+permissions:
+    vf.admin:
+        description: Allows admin operations.
+        default: op
+    vf.user:
+        description: Allows user operations.
+        default: true
+
+commands:
+    vectorforce:
+        description: "Main command for VectorForce"
+        usage: "/<command> [argument]"
+        aliases: [vf, vector, force, vforce, vectorf]
+    spectate:
+        description: "Sends player to spectator mode and back."
+        usage: "/<command> [argument]"
+        aliases: [spectator, spec, watch]

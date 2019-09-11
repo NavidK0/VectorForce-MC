@@ -1,0 +1,130 @@
+#Music that plays when a player joins
+intro-music: intro
+
+database:
+    user: root
+    password:
+    host: psmc.ca
+    db: vectorforce
+
+#Minimum players required to receive win tokens
+min-players: 5
+
+#VectorForce tokens
+first: 10
+second: 6
+third: 3
+other: 1
+highscore-tokens: 20
+
+#Theme options
+themes:
+  default:
+    display-name: "&7Urban Rundown"
+    music:
+        - mushroombridge
+        - paperengine
+        - toadsturnpike
+        - neocortex
+    time: 6000
+    description:
+        - "&fThe crazy old racing parkour"
+        - "&f map you all know and love."
+    gamerules:
+        - doMobSpawning true
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: COAL_BLOCK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 10
+  icy:
+    display-name: "&bIce Roads"
+    music:
+        - iceiceoutpost
+        - mountwario
+    description:
+        - "&fSlippery and cold, this map will surely"
+        - "&fslide you to your demise."
+    gamerules:
+        - doMobSpawning true
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: ICE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 10
+  tnt:
+    display-name: "&4Jazz Run"
+    music:
+        - minigame6
+        - minigame22
+        - cancan
+        - groose
+        - fastjazz
+    description:
+        - "&cHope you've learned some good jazz"
+        - "&crunning techniques!"
+    gamerules:
+        - doTileDrops false
+        - doEntityDrops false
+        - doMobSpawning false
+    entity-spawning: false
+    environment: NETHER
+    tokens: false
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: TNT
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 10
+  oldgold:
+    display-name: "&6Old Gold"
+    music:
+        - barbra
+        - thwompruins
+        - grumblevolcano
+        - bonedrydunes
+        - tempest
+    description:
+        - "&eSome say the prospectors"
+        - "&etried running through this ancient"
+        - "&ewalkway, but failed to parkour properly."
+    gamerules:
+        - doMobSpawning true
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: GOLD_BLOCK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 10
+  slimeally:
+    display-name: "&2Slime Ally"
+    music:
+        - thwompruins
+        - grumblevolcano
+        - dragondriftway
+        - bonedrydunes
+        - tempest
+    description:
+        - "&aUgh, so sticky!"
+        - "&aWho's idea was it to build"
+        - "&aa temple out of slime?!"
+    gamerules:
+        - doMobSpawning true
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: SLIME_BLOCK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 10
